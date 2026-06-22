@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.gym.ui.MainController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0">
+    <top>
+        <VBox prefHeight="60.0" prefWidth="1200.0" style="-fx-background-color: #2c3e50; -fx-padding: 10;">
+            <Label text="Fitness Hub - Gym Management System" style="-fx-text-fill: white; -fx-font-size: 24; -fx-font-weight: bold;"/>
+        </VBox>
+    </top>
+    <left>
+        <VBox prefWidth="250.0" style="-fx-background-color: #34495e;">
+            <Button text="Dashboard" prefWidth="Infinity" style="-fx-padding: 12; -fx-font-size: 14;"/>
+            <Separator/>
+            <Label text="Member Management" style="-fx-text-fill: white; -fx-padding: 10; -fx-font-weight: bold;"/>
+            <Button text="Register Member" prefWidth="Infinity" style="-fx-padding: 12;"/>
+            <Button text="View Members" prefWidth="Infinity" style="-fx-padding: 12;"/>
+            <Separator/>
+            <Label text="Course Management" style="-fx-text-fill: white; -fx-padding: 10; -fx-font-weight: bold;"/>
+            <Button text="Create Course" prefWidth="Infinity" style="-fx-padding: 12;"/>
+            <Button text="View Courses" prefWidth="Infinity" style="-fx-padding: 12;"/>
+            <Separator/>
+            <Label text="Training Plans" style="-fx-text-fill: white; -fx-padding: 10; -fx-font-weight: bold;"/>
+            <Button text="Create Training Plan" prefWidth="Infinity" style="-fx-padding: 12;"/>
+            <Button text="View Training Plans" prefWidth="Infinity" style="-fx-padding: 12;"/>
+            <Separator/>
+            <Label text="Training Logs" style="-fx-text-fill: white; -fx-padding: 10; -fx-font-weight: bold;"/>
+            <Button text="Log Training Session" prefWidth="Infinity" style="-fx-padding: 12;"/>
+            <Button text="View Logs" prefWidth="Infinity" style="-fx-padding: 12;"/>
+            <Separator/>
+            <Label text="Physical Fitness" style="-fx-text-fill: white; -fx-padding: 10; -fx-font-weight: bold;"/>
+            <Button text="Physical Data" prefWidth="Infinity" style="-fx-padding: 12;"/>
+            <Button text="Fitness Tests" prefWidth="Infinity" style="-fx-padding: 12;"/>
+        </VBox>
+    </left>
+    <center>
+        <VBox fx:id="contentArea" style="-fx-padding: 20;">
+            <Label text="Welcome to Fitness Hub" style="-fx-font-size: 20; -fx-font-weight: bold;"/>
+            <Label text="Select an option from the left menu to get started." style="-fx-padding: 10;"/>
+        </VBox>
+    </center>
+</BorderPane>
